@@ -1,0 +1,17 @@
+{
+    "name": "rosa/php-simple-routes",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app"
+        }
+    },
+    "authors": [
+        {
+            "name": "SamuelUniverso",
+            "email": "samuel.rockenbach@universo.univates.br"
+        }
+    ],
+    "require": {
+        "league/plates": "^3.4"
+    }
+}
