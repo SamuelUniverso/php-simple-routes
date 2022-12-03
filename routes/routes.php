@@ -1,6 +1,6 @@
 <?php
 
-$router = [
+$routes = [
     'GET' => [
         '/' => fn() => handle('HomeController', 'index'),
         '/contact' => fn() => handle('ContactController', 'index')

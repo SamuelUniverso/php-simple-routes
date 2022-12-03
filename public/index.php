@@ -10,17 +10,17 @@ try
     $uri = parse_url($_SERVER['REQUEST_URI'])['path'];
     $request = $_SERVER['REQUEST_METHOD'];
     
-    if(!isset($router[$request]))
+    if(!isset($routes[$request]))
     {
         throw new Exception("A rota não existe");
     }
     
-    if(!array_key_exists($uri, $router[$request]))
+    if(!array_key_exists($uri, $routes[$request]))
     {
         throw new Exception("A rota não existe");
     }
 
-    $controller = $router[$request][$uri];
+    $controller = $routes[$request][$uri];
     $controller();
 
 } catch(Exception $e) {
